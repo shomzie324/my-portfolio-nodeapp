@@ -20,12 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
     
 
     
-    <link rel="stylesheet" href="/public/css/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="/public/css/style.css"> <!-- Resource style -->
-	
+    <link rel="stylesheet" href="/public/css/reset.css"> <!-- project CSS reset -->
+    <link rel="stylesheet" href="/public/css/style.css"> <!--  project Resource style -->
 
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -43,9 +44,9 @@
                     <div class="menu-icon">
                         <i class="fa fa-bars fa-2x"></i>
                     </div>
-                    <div id="logo-icon" class="logo">
+                    {{!-- <div id="logo-icon" class="logo">
                         SHOMARI MALCOLM
-                    </div>
+                    </div> --}}
                     <div class="menu">
                         <ul>
                             <li class="list-items">
@@ -69,8 +70,11 @@
                         </ul>
                     </div>
                 </nav>
+                <h1 class="animated fadeInUp">Shomari Malcolm</h1>
+                <div class="line-break animated slideInLeft"></div>
+                <h3 class="animated fadeInDown">Software Engineer</h3>
             </header>
-        </div>
+        </div>  
     </section>
 
     <section class="section-a" id="about-page">
@@ -123,7 +127,7 @@
 
     <!-- slider section -->
 
-    <section id="wrapper" class="skewed">
+    <section id="wrapper" class=" cd-section skewed">
         <div class="layer bottom">
             <div class="content-wrap">
                 <div class="content-body">
@@ -435,9 +439,9 @@
     <section class="contact-me-section" id="contact-section">
         <div class="contact-info">
             <div>
-                <h1>Interested? Let's get to work.</h1>
+                <h1>Interested? Let's get to work!</h1>
                 <form method="GET" action="contact">
-                    <p><button class="waves-effect waves-light btn-large">Download Resume</button></p>
+                    <p><button class="waves-effect waves-light btn-large" type="submit" onclick="window.open('/public/img/Shomari_Resume.pdf')">Download Resume</button></p>
 
                     <p><button type="submit" class="waves-effect waves-light btn-large">Contact Me</button></p>
                 </form>
@@ -458,8 +462,8 @@
     
     <script src="/public/js/navbar.js"></script>
     <script src="/public/js/skills.js"></script>
-    <script src="/public/js/jquery-2.1.1.js"></script>
-    <script src="/public/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="/public/js/jquery-2.1.4.js"></script>
+    <script src="/public/js/main.js"></script> <!-- Project Resource jQuery -->
 
 </body>
 

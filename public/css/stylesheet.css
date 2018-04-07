@@ -22,6 +22,31 @@ header{
     z-index: 2;
 }
 
+.navbar h1{
+    position: absolute;
+    font-size:80px;
+    top:20%;
+    left:25%;
+    color: #222;
+    opacity: 0.7;
+}
+.navbar h3{
+    position: absolute;
+    font-size:40px;
+    top:35%;
+    left:35%;
+    color:#222;
+}
+
+.navbar .line-break{
+    position: absolute;
+    top:32%;
+    left:27%;
+    height: 1px;
+    width:550px;
+    background: #222;
+}
+
 .section-a{
     background-color: #333;
     color: #fff;
