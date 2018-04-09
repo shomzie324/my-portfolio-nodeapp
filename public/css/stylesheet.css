@@ -8,6 +8,17 @@ body {
     font-family:'Source Code Pro', monospace;
 }
 
+/*------------------------------ 
+
+Scroll Animation 
+
+------------------------------*/
+
+.inView{
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
 /*landing page and about section */
 
 header{
@@ -26,7 +37,7 @@ header{
     position: absolute;
     font-size:80px;
     top:20%;
-    left:25%;
+    left:26%;
     color: #222;
     opacity: 0.7;
 }
@@ -34,18 +45,116 @@ header{
     position: absolute;
     font-size:40px;
     top:35%;
-    left:35%;
+    left:36%;
     color:#222;
 }
 
 .navbar .line-break{
     position: absolute;
     top:32%;
-    left:27%;
+    left:28%;
     height: 1px;
     width:550px;
     background: #222;
 }
+
+.navbar .social-media{
+    position: absolute;
+    font-size: 40px;
+    top: 42%;
+    left: 39%;
+    transition-duration: 2s;
+}
+
+.navbar .social-media li{
+    display: inline-block;
+}
+
+.navbar .social-media a{
+    margin: 10px 20px;
+    color:#fff;
+}
+
+.navbar .social-media a:hover{
+    color: black;
+}
+
+.navbar .social-media li:hover{
+    border-color: black;
+}
+
+
+.logowhite {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    background-color: transparent !important;
+}
+
+nav ul {
+    list-style: none; 
+    background-color:transparent;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    left: 28%;
+    top: 30%;
+    transition: 0.5s;
+}
+
+nav.black ul {
+    background: black;
+}
+
+nav.black ul li a {
+    color: #fff;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 20px;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+nav ul li:hover{
+    box-shadow: none !important;    
+}
+
+.menu-icon {
+    width: 100%;
+    background: #222;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    color: #fff;
+    display: none;
+
+}
+
+/*----------------------- 
+
+About Section 
+
+-------------------------*/
 
 .section-a{
     background-color: #333;
@@ -60,6 +169,12 @@ header{
     margin-top: 70px;
     margin-bottom: 0;
     margin-left: 4rem;
+}
+
+.section-a img{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .landing-content{
@@ -119,73 +234,31 @@ header{
     font-size: 24px;
 }
 
-.logowhite {
-    position: fixed;
-    float: left;
-    margin: 16px 36px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 24px;
+@media(max-width: 768px){
+    .landing-content{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        width: 30%;
+        font-size: 5px;
+        /* line-height: 30px; */
+        /* text-align: justify; */
+        max-height: 100vh;
+        max-width: 100%;
+    }
+
+    .landing-content p{
+        font-size: 10px;
+    }
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    z-index: 4;
-    background-color: transparent !important;
-}
+/*------------------------- 
 
-nav ul {
-    list-style: none; 
-    background-color:transparent;
-    padding: 0;
-    text-align: center;
-    position: absolute;
-    left: 30%;
-    top: 30%;
-    transition: 0.5s;
-}
+slider css 
 
-nav.black ul {
-    background: black;
-}
+---------------------------*/
 
-nav.black ul li a {
-    color: #fff;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #222;
-    font-size: 20px;
-}
-
-nav ul li a:hover{
-    text-decoration: none;
-    background-color: transparent !important;
-}
-
-nav ul li:hover{
-    box-shadow: none !important;    
-}
-
-.menu-icon {
-    width: 100%;
-    background: #222;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 15px 24px;
-    color: #fff;
-    display: none;
-
-}
-
-/* slider css */
 #wrapper {
     position: relative;
     width:100%;
@@ -209,16 +282,17 @@ nav ul li:hover{
 .layer .content-body{
     width: 25%;
     position: absolute;
-    top:50%;
+    top:35%;
     text-align: center;
-    transform: translatey(-50%);
+    transform: translate(-50%);
     color: #fff;
+    animation-delay: 3s;
 }
 
 .layer img {
     position: absolute;
     width: 35%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform:translate(-50%, -50%);
 }
@@ -306,27 +380,41 @@ similar to the handle bar */
 
     nav ul {
         max-height: 0px;
-        background: #000;
+        background: #222;
     }
 
     nav.black ul {
-        background: #000;
+        background: #222;
         z-index: 2;
+    }
+
+    nav.black .menu-icon i{
+        display: block;
+        z-index: 1000;
     }
 
     .showing {
         max-height: 60em;
         box-sizing: border-box;
         width: 100%;
-        padding: 24px;
+        margin-top: 26px;
         text-align: center;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: block;
+        left:0;
+        padding: 20px;
+        /* display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+    }
+
+    .showing li{
+        margin:30px 10px;
     }
 
     .showtext {
-        opacity: 1;
+        display: block;
         transition: 1s;
+         color: #fff;
     }
 
     .skill-wrapper.header-icons{
@@ -335,11 +423,31 @@ similar to the handle bar */
     }
 
     nav ul li a {
-        opacity: 0;
+        display: none;
     }
 
     .menu-icon {
         display: block;
+    }
+
+    .layer .content-body{
+        font-size: 8px;
+    }
+
+    /* landing page responses */
+    .navbar .sm-heading{
+        font-size: 30px;
+        left: 20%;
+    }
+
+    .navbar h1{
+        top: 25%;
+        left: 50%;
+    }
+
+    .navbar .sm-heading-line{
+        width: 150px;
+        left: 30%
     }
 
     @media(max-width:400px){

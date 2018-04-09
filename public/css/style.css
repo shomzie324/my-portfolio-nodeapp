@@ -368,13 +368,13 @@ Projects
 .cd-projects-previews a,
 .cd-projects .preview-image {
   /* set a background image for each project */
-  background: #5b927d url(../img/img-5.jpg) no-repeat center center;
+  background: #5b927d url(../img/meetupz-1.jpg) no-repeat center center;
   background-size: cover;
 }
 
 .cd-projects-previews li:nth-of-type(2) a,
 .cd-projects > li:nth-of-type(2) .preview-image {
-  background: #a8ae7e url(../img/img-6.jpg) no-repeat center center;
+  background: #a8ae7e url(../img/nodekb-1.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -583,18 +583,78 @@ li.selected .cd-project-title,
 
 .cd-project-info a{
   position: absolute;
-  left: 45%;
+  left: 50%;
   margin-top: 15px;
   background: black;
 }
 
 .cd-project-info a:hover{
   position: absolute;
-  left: 45%;
+  left: 50%;
   margin-top: 15px;
   background: white;
   color: black;
 }
+
+.project-title-header{
+  color: black;
+  font-weight: bold;
+}
+
+/*------------------------ 
+
+Custom Project Button Code 
+
+------------------------*/
+
+#meetupz-btn{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: black;
+}
+
+#meetupz-btn:hover{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: white;
+  color: black;
+}
+
+#nodekb-btn{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: black;
+}
+
+#nodekb-btn:hover{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: white;
+  color: black;
+}
+
+#python-btn{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: black;
+}
+
+#python-btn:hover{
+  position: absolute;
+  left: 40%;
+  margin-top: 15px;
+  background: white;
+  color: black;
+}
+
+/*------------------------ 
+Custom Project Button Code End 
+------------------------*/
 
 .cd-projects-container .scroll {
   display: block;
