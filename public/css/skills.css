@@ -49,6 +49,12 @@ body {
     opacity: 0.85;
 }
 
+#skills-section h3{
+    position: absolute;
+    left: 3%;
+    top: 10%;
+}
+
 .skill-header-content{
     z-index: 2;
     padding-right: 1rem;
@@ -62,7 +68,7 @@ body {
     left: 165px;
     top: 25px;
     z-index: 1;
-    height: 60px;
+    height: 50px;
     width:20px;
     background: #1ec503;
     animation-name: cursor-anim;
@@ -92,7 +98,8 @@ body {
     grid-column-gap: 3rem;
     align-self: center;
     margin-top: 10%;
-    overflow: auto;
+    /* overflow: auto; */
+    height: auto;
 }
 
 .skill-wrapper i{
@@ -108,6 +115,10 @@ body {
 }
 
 @media(max-width:768px){
+
+    nav{
+        max-width: 100vw;
+    }
 
     .skill-header-content{
         padding-right: 3rem;
