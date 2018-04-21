@@ -8,10 +8,10 @@ const app = express();
 
 //Set up variables for nodemail
 const user_name     = 'shomarimalcolm@gmail.com';
-    const refresh_token = '1/T3UrDwBvkXQX0gKiDI9LvJqoDnuA4LJTnN7GfqY291M';
-    const access_token  = 'ya29.GluTBShhzy349xKfkPz171b8gygFI6Hh5hFjrtyyWtsKbN8bLbPydWXstgjxYaQqVWDisXZvL848iBfmGDbPfThOhjoeyo7XaVdF3ABzdPt7OU3A3iSsR8QEWZeK';
-    const client_id     = '395031305706-sgr1c0s3sgmhkn2g8hs497hid5i5o7le.apps.googleusercontent.com';
-    const client_secret = 'YNIMDiGaHEyIhRiLCrrMKMV6';
+    const refresh_token = your_refresh_tokem;
+    const access_token  = your_access_token;
+    const client_id     = your client_id;
+    const client_secret = your_client_secret';
 
     const email_to = 'shomarimalcolm@gmail.com';
 
