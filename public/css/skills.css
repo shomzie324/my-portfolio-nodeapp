@@ -78,6 +78,18 @@ body {
     animation-direction: alternate;
 }
 
+@keyframes cursor-anim{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 .skill-header-content h1{
     font-size:50px;
     position: absolute;

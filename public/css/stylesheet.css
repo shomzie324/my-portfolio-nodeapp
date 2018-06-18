@@ -161,7 +161,7 @@ About Section
     background-color: #333;
     color: #fff;
     width: 100%;
-    height: auto;
+    height: 100vh;
     overflow: scroll;
 }
 

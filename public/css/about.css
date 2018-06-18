@@ -1,0 +1,22 @@
+.section-a #key-cursor{
+    z-index: 1;
+    margin-top: 75px;
+    margin-right: 80px;
+    height: 60px;
+    width:20px;
+    background: #1ec503;
+    animation-name: cursor-anim;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate; 
+}
+
+@keyframes cursor-anim{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
