@@ -15,20 +15,27 @@ const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
 const email_to = "shomarimalcolm@gmail.com";
 
+console.log(user_name);
+console.log(refresh_token);
+console.log(access_token);
+console.log(client_id);
+console.log(client_secret);
+
 //Set up view engine to use handle bars middle ware
 app.engine("handlebars", exphbs());
 app.set("view engine", "handlebars");
 
 //Set up Static folder for client side css and js
 //note: __dirname is the path for the current directory, sets public as the static folder
-app.use("/public", express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "/public")));
+//app.use(express.static("./public/"));
 
 //Set up Body Parser middle ware
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //home page route
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   res.render("home");
 });
 
@@ -62,6 +69,7 @@ app.post("/send", (req, res) => {
       clientSecret: client_secret
     }
   });
+
   transporter.on("token", token => {
     console.log("A new access token was generated");
     console.log("User: %s", token.user);
@@ -95,4 +103,4 @@ app.post("/send", (req, res) => {
   });
 });
 
-app.listen(8080, () => console.log("Server Started..."));
+app.listen(4000, () => console.log("Server Started..."));
